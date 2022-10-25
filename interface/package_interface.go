@@ -1,4 +1,4 @@
-package main
+package package_interface
 
 import "fmt"
 
@@ -30,19 +30,4 @@ func (c Cat) Run() {
 
 func (c Cat) Eat() {
 	fmt.Println(c.Name, "eat()")
-}
-
-func main() {
-	var a Animal
-	c := Cat{
-		Name: "tom",
-		Sex:  false,
-	}
-
-	a = c
-
-	a.Eat()
-	a.Run()
-	// a.Name
-
 }
